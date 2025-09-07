@@ -40,7 +40,7 @@ go mod tidy
 ```
 3. Execute o servidor:
 ```
-go run server.go
+go run server/server.go
 ```
 Saída esperada:
 ```
@@ -48,7 +48,7 @@ Saída esperada:
 ```
 4. Em outro terminal, rode o cliente:
 ```
-go run client.go
+go run client/client.go
 ```
 Saída esperada:
 ```
@@ -66,8 +66,10 @@ Dólar: 5.38
 ## Estrutura do projeto
 ```
 Desafio.Client-Server-API/
-├── client.go
-├── server.go
+├── client/
+│ └── client.go
+├── server/
+│ └── server.go
 ├── cotacoes.db
 ├── cotacao.txt
 ├── go.mod
